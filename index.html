@@ -26,24 +26,33 @@
 </head>
 <body>
 
-        <div class="jumbotron">
+
+            <!------------------   MAIN JUMBOTRON    id="jumbottron"    ------------------------>
+
+
+        <div id="jumbotron" class="jumbotron">
                 <h1 class="display-3">
                 <img class="fit" src = "assets/images/nytsearchheading.png" alt="NYT Search Heading"></img>
                 </h1>
 
-            <div class="card" style="width: 18rem;">
+            <!------------------   CARD: SEARCH FORM   id="divSearch" ------------------------>
+
+            <div class="card" style="width: auto;">
                 <div class="card-body">
                     <h5 class="card-title">SEARCH PARAMETERS</h5>
                     <p class="card-text">Input your requirements here</p>       
               
                         <div class="form">
                             <form>
+
+                                <!------------------   FIELD: Search Term ------------------------>
                                 <div class="form-group">
                                   <label for="exampleFormControlInput1">Search Term</label>
                                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="What are you looking for?">
                                 </div>
 
-                                
+
+                                <!------------------   FIELD: # of records ------------------------>
                                 <div class="form-group">
                                   <label for="exampleFormControlSelect1">Number of records to retrieve:</label>
                                   <select class="form-control" id="exampleFormControlSelect1">
@@ -60,24 +69,52 @@
                                   </select>
                                 </div>
 
-
+                                <!------------------   FIELD: Start Year ------------------------>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Start Year</label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter start year for your search">
                                 </div>
 
-
+                                <!------------------   FIELD: ENd Year ------------------------>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">End Year</label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter end year for your search">
                                 </div>
+
+
+
+
+                                 <!------------------   BUTTON: Search ------------------------>
+                                <a href="#" id="button-search" class="btn btn-primary">Search</a>
+
+
+                                
+
+                                 <!------------------   BUTTON: Clear ------------------------>
+                                <a href="#" class="btn btn-primary">Clear Results</a>
+
+
+
+
                             </form>
                         </div>
                 </div>
             </div>
 
-            <a href="#" id="button-search" class="btn btn-primary">Search</a>
-            <a href="#" class="btn btn-primary">Clear Results</a>
+            
+            <!------------------   CARD: TOP ARTICLES  id="divResults"   ------------------------>
+
+            <div id="divResults" class="card" style="width: auto">
+                <div class="card-body">
+                    <h5 class="card-title">TOP ARTICLES</h5>
+                </div>
+            </div>
+
+
+
+
+
+
         </div>
 
                                  
