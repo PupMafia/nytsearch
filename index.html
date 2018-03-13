@@ -1,124 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NYTSearch</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
     <style>
-            * {
-              padding: 0;
-              margin: 0;
-            }
-            .fit {
-              max-width: 100%;
-              max-height: 100%;
-            }
-            .center {
-              display: block;
-              margin: auto;
-            }
-            </style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .fit {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .center {
+            display: block;
+            margin: auto;
+        }
+    </style>
 
 </head>
+
 <body>
 
 
-            <!------------------   MAIN JUMBOTRON    id="jumbottron"    ------------------------>
+    <!------------------   MAIN JUMBOTRON    id="jumbottron"    ------------------------>
 
 
-        <div id="jumbotron" class="jumbotron">
-                <h1 class="display-3">
-                <img class="fit" src = "assets/images/nytsearchheading.png" alt="NYT Search Heading"></img>
-                </h1>
+    <div id="jumbotron" class="jumbotron">
+        <h1 class="display-3">
+            <img class="fit" src="assets/images/nytsearchheading.png" alt="NYT Search Heading"></img>
+        </h1>
 
-            <!------------------   CARD: SEARCH FORM   id="divSearch" ------------------------>
+        <!------------------   CARD: SEARCH FORM   id="divSearch" ------------------------>
 
-            <div class="card" style="width: auto;">
-                <div class="card-body">
-                    <h5 class="card-title">SEARCH PARAMETERS</h5>
-                    <p class="card-text">Input your requirements here</p>       
-              
-                        <div class="form">
-                            <form>
+        <div class="card" style="width: auto;">
+            <div class="card-body">
+                <h5 class="card-title">SEARCH PARAMETERS</h5>
+                <p class="card-text">Input your requirements here</p>
 
-                                <!------------------   FIELD: Search Term ------------------------>
-                                <div class="form-group">
-                                  <label for="exampleFormControlInput1">Search Term</label>
-                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="What are you looking for?">
-                                </div>
+                <div class="form">
+                    <form>
 
-
-                                <!------------------   FIELD: # of records ------------------------>
-                                <div class="form-group">
-                                  <label for="exampleFormControlSelect1">Number of records to retrieve:</label>
-                                  <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>10</option>
-                                    <option>15</option>
-                                    <option>20</option>
-                                    <option>25</option>
-                                    <option>30</option>
-                                  </select>
-                                </div>
-
-                                <!------------------   FIELD: Start Year ------------------------>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Start Year</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter start year for your search">
-                                </div>
-
-                                <!------------------   FIELD: ENd Year ------------------------>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">End Year</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter end year for your search">
-                                </div>
-
-
-
-
-                                 <!------------------   BUTTON: Search ------------------------>
-                                <a href="#" id="button-search" class="btn btn-primary">Search</a>
-
-
-                                
-
-                                 <!------------------   BUTTON: Clear ------------------------>
-                                <a href="#" class="btn btn-primary">Clear Results</a>
-
-
-
-
-                            </form>
+                        <!------------------   FIELD: Search Term ------------------------>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Search Term</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1 search" placeholder="What are you looking for?">
                         </div>
+
+
+                        <!------------------   FIELD: # of records ------------------------>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Number of records to retrieve:</label>
+                            <select class="form-control " id="exampleFormControlSelect1 numarticle">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>10</option>
+                                <option>15</option>
+                                <option>20</option>
+                                <option>25</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+
+                        <!------------------   FIELD: Start Year ------------------------>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Start Year</label>
+                            <input type="email" class="form-control " id="exampleFormControlInput1 startyear" placeholder="Enter start year for your search">
+                        </div>
+
+                        <!------------------   FIELD: ENd Year ------------------------>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">End Year</label>
+                            <input type="email" class="form-control " id="exampleFormControlInput1 endyear" placeholder="Enter end year for your search">
+                        </div>
+
+
+
+
+                        <!------------------   BUTTON: Search ------------------------>
+                        <a href="#" id="button-search" class="btn btn-primary">Search</a>
+
+
+
+
+                        <!------------------   BUTTON: Clear ------------------------>
+                        <a href="#" class="btn btn-primary " id="clear">Clear Results</a>
+
+
+
+
+                    </form>
                 </div>
             </div>
-
-            
-            <!------------------   CARD: TOP ARTICLES  id="divResults"   ------------------------>
-
-            <div id="divResults" class="card" style="width: auto">
-                <div class="card-body">
-                    <h5 class="card-title">TOP ARTICLES</h5>
-                </div>
-            </div>
-
-
-
-
-
-
         </div>
 
-                                 
 
-    
+        <!------------------   CARD: TOP ARTICLES  id="divResults"   ------------------------>
+
+        <div id="divResults" class="card" style="width: auto">
+            <div class="card-body">
+                <h5 class="card-title " id="toparticles">TOP ARTICLES</h5>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+
 </body>
+
 </html>
